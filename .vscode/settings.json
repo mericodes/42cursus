@@ -1,5 +1,8 @@
 {
 	"files.associations": {
-		"libft.h": "c"
+		"libft.h": "c",
+		"unistd.h": "c",
+		"string": "c",
+		"iosfwd": "c"
 	}
 }
