@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 //returns 1 if "c" is a digit and 0 if not
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);
