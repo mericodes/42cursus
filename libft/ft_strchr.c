@@ -20,10 +20,10 @@ char *strchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == c)
-			return (&s[i]);
+			return ((char *)s + i);
 		i++;
 	}
 	if (s[i] == '\0' && c == 0)
-		return(&s[i]);
+		return((char *)s + i);
 	return (NULL);
 }

@@ -14,15 +14,15 @@
 //function returns a pointer to the first occurrence of the character c in the string s
 char *strrchr(const char *s, int c)
 {
-	size_t i;
+	int i;
 
 	i = strlen(s);
 	if (c == 0)
-		return(&s[i]);
+		return ((char *)s + i);
 	while (i >= 0)
 	{
 		if (s[i] == c)
-			return (&s[i]);
+			return ((char *)s + i);
 		i--;
 	}
 	return (NULL);
