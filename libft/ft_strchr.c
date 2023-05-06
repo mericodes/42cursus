@@ -11,10 +11,11 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-//function returns a pointer to the first occurrence of the character c in the string s
-char *strchr(const char *s, int c)
+//function returns a pointer to the first occurrence of the character 
+//c in the string s
+char	*strchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
@@ -24,6 +25,6 @@ char *strchr(const char *s, int c)
 		i++;
 	}
 	if (s[i] == '\0' && c == 0)
-		return((char *)s + i);
+		return ((char *)s + i);
 	return (NULL);
 }

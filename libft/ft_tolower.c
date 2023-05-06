@@ -12,9 +12,9 @@
 #include "libft.h"
 
 //converts the letter c to lower case, if possible
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	if (c <= 65 && c>= 90)
+	if (c >= 65 && c <= 90)
 		return (c + 32);
 	return (c);
 }

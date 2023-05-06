@@ -12,8 +12,7 @@
 #include "libft.h"
 
 //copies n bytes from src to dest
-void *memcpy(void *dest, const void *src, size_t n)
+void	*memcpy(void *dest, const void *src, size_t n)
 {
-	
-	return dest;
+	return (dest);
 }
