@@ -9,6 +9,7 @@
 /*   Updated: 2023/05/03 17:16:08 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 //returns 1 if "c" is an alphabetical character and 0 if not
 int	ft_isalpha(int c)

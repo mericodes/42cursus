@@ -9,6 +9,7 @@
 /*   Updated: 2023/05/03 17:17:11 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 //returns 1 if "c" is a digit and 0 if not
 int	ft_isdigit(int c)

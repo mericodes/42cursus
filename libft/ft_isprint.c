@@ -9,6 +9,7 @@
 /*   Updated: 2023/05/03 17:17:49 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 //returns 1 if "c" is a printable character and 0 if not
 int	ft_isprint(int c)
