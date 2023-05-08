@@ -31,7 +31,7 @@ char			*strchr(const char *s, int c);
 char			*strrchr(const char *s, int c);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
-size_t			ft_strlcpy(char *dest, char *src, size_t size);
+size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 
 int				ft_tolower(int c);
 int				ft_toupper(int c);
