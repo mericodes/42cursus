@@ -36,4 +36,5 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 
+void 			*calloc(size_t nmemb, size_t size);
 #endif
