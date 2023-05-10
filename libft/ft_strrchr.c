@@ -14,7 +14,7 @@
 //function returns a pointer to the first occurrence of the character 
 //c in the string s
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 

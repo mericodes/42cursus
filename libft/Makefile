@@ -2,6 +2,7 @@ NAME = libft.a
 
 SRCS_MAND	=	ft_memset.c		\
 		  		ft_bzero.c		\
+				ft_calloc.c		\
 		  		ft_strlen.c		\
 		  		ft_strlcat.c	\
 		 	 	ft_strchr.c		\

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //converts the letter c to lower case, if possible
 int	ft_tolower(int c)
 {

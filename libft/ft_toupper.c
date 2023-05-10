@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //converts the letter c to upper case, if possible
 int	ft_toupper(int c)
 {

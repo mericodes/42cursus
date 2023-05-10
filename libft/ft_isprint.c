@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //returns 1 if "c" is a printable character and 0 if not
 int	ft_isprint(int c)
 {

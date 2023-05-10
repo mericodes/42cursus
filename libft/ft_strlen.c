@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //return the length (number of characters before the final NULL) of the string s
 size_t	ft_strlen(const char *s)
 {

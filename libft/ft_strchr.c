@@ -11,9 +11,17 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco leak memoria
+/*For ft_strchr, in 
+/Users/mlopez-i/francinette/tests/libft/fsoares/test_strchr.c:
+
+Error in test 5: ft_strchr(0x10622ea40: "teste", 357: 'e'): 
+expected: 0x10622ea41, yours: 0x0
+Error in test 6: ft_strchr(0x10622ea40: "teste", 1024: '\0'): 
+expected: 0x10622ea45, yours: 0x0*/
 //function returns a pointer to the first occurrence of the character 
 //c in the string s
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
 

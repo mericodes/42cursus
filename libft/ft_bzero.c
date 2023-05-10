@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //writes len bytes of value 0 to the string b
 void	ft_bzero(void *s, size_t n)
 {

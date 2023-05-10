@@ -12,7 +12,8 @@
 #include "libft.h"
 #include <stdio.h>
 
-void *calloc(size_t nmemb, size_t size)
+//no paco
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	return (malloc(nmemb * size));
 }
