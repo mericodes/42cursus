@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlopez-i <mlopez-i@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 17:18:32 by mlopez-i          #+#    #+#             */
-/*   Updated: 2023/05/03 17:18:33 by mlopez-i         ###   ########.fr       */
+/*   Created: 2023/05/03 17:19:02 by mlopez-i          #+#    #+#             */
+/*   Updated: 2023/05/03 17:19:03 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-//copies n bytes from src to dest
-/*void	*memcpy(void *dest, const void *src, size_t n)
+//paco ok
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	return (dest);
-}*/
+	size_t	i;
+
+	i = 0;
+	if (size > 0)
+	{
+		while (src[i] != '\0' && i < size - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (ft_strlen(src));
+}

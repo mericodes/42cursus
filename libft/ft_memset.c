@@ -15,9 +15,9 @@
 //writes len bytes of value c (converted to an unsigned char) to the string b
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*s;
+	unsigned char	*s;
 
-	s = (char *)b;
+	s = (unsigned char *)b;
 	while (len > 0)
 	{
 		s[len - 1] = c;

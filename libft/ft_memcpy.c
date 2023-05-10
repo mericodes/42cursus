@@ -1,16 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlopez-i <mlopez-i@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 17:18:41 by mlopez-i          #+#    #+#             */
-/*   Updated: 2023/05/03 17:18:42 by mlopez-i         ###   ########.fr       */
+/*   Created: 2023/05/03 17:18:32 by mlopez-i          #+#    #+#             */
+/*   Updated: 2023/05/03 17:18:33 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-/*void    *memmove(void *dest, const void *src, size_t n)
+
+//paco ok
+//copies n bytes from src to dest
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    return (dest);
-}*/
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
+
+	i = 0;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	if (dest == NULL && src == NULL)
+		return (NULL);
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
+}

@@ -11,19 +11,19 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+//paco ok
 //function returns a pointer to the first occurrence of the character 
 //c in the string s
-
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = strlen(s);
-	if (c == 0)
+	i = ft_strlen(s);
+	if ((char)c == '\0')
 		return ((char *)s + i);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)s + i);
 		i--;
 	}
