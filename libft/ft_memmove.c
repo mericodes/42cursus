@@ -10,32 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+//no paco
+// The memmove() function copies len bytes from string src to string dst
+// The two strings may overlap; 
+// the copy is always done in a non-destructive manner
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	size_t	i;
-	char	*d;
-	char	*s;
 
-	d = (char *)dest;
-	s = (char *)src;
 	if (dest == NULL && src == NULL)
 		return (NULL);
 	if (dest < src)
 	{
 		i = 0;
-		while (i < n)
+		while (i < len)
 		{
-			d[i] = s[i];
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
 	else
 	{
-		i = n - 1;
+		i = len - 1;
 		while (i >= 0)
 		{
-			d[i] = s[i];
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i--;
 		}
 	}
