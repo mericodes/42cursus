@@ -11,19 +11,18 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-//no paco
-void	*ft_calloc(size_t nmemb, size_t size)
+//paco ok
+// The calloc() function contiguously allocates enough space for count
+// objects that are size bytes of memory each and returns a pointer to the
+// allocated memory.  The allocated memory is filled with bytes of value
+// zero
+void	*ft_calloc(size_t count, size_t size)
 {
-	return (malloc(nmemb * size));
-}
+	void	*ret;
 
-/*int	main(void)
-{
-	void * a = calloc (10, sizeof(char));
-	void * b = malloc (10 * sizeof(char));
-	void * c = malloc (10 * sizeof(char));
-	printf("%p \n", a);
-	printf("%p \n", b);
-	printf("%p \n", c);
-	return (0);
-}*/
+	ret = malloc (count * size);
+	if (!ret)
+		return (NULL);
+	ft_bzero(ret, count * size);
+	return (ret);
+}

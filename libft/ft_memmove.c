@@ -10,21 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-//no paco
+
+// paco ok
 // The memmove() function copies len bytes from string src to string dst
 // The two strings may overlap; 
 // the copy is always done in a non-destructive manner
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	size_t	i;
+	int	i;
 
 	if (dest == NULL && src == NULL)
 		return (NULL);
 	if (dest < src)
 	{
 		i = 0;
-		while (i < len)
+		while (i < (int)len)
 		{
 			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i++;
@@ -32,7 +33,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	else
 	{
-		i = len - 1;
+		i = (int)len - 1;
 		while (i >= 0)
 		{
 			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
